@@ -8,7 +8,30 @@
     margin-bottom: 24px;
   }
 
+  &-icons {
+    display: flex;
+    justify-content: center;
+  }
+
   .icon-socials {
     color: $primary-text-color;
+    transition: opacity 0.4s ease, color 0.4s ease;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      color: $orange-text-color;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      color: $orange-text-color;
+    }
   }
 }

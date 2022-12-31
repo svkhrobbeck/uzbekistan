@@ -62,7 +62,7 @@ html {
 
 a {
   text-decoration: none;
-  display: inline-block;
+  display: flex;
 }
 
 ul {
@@ -181,7 +181,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 250px 0;
+  padding: 200px 0 300px;
   text-align: center;
 }
 .hero__heading {
@@ -375,8 +375,26 @@ body {
   font-family: "Bebas Neue";
   margin-bottom: 24px;
 }
+.socials-icons {
+  display: flex;
+  justify-content: center;
+}
 .socials .icon-socials {
   color: #000;
+  transition: opacity 0.4s ease, color 0.4s ease;
+}
+.socials .icon-socials:not(:last-child) {
+  margin-right: 16px;
+}
+.socials .icon-socials:hover {
+  opacity: 0.8;
+  color: #ff7500;
+}
+.socials .icon-socials:active {
+  opacity: 0.6;
+}
+.socials .icon-socials:focus {
+  color: #ff7500;
 }
 
 .site-footer {
