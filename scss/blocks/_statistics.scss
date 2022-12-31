@@ -1,0 +1,63 @@
+.statistics {
+  background-image: url(../../images/tashkent.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  padding: 230px 0;
+  font-family: "Bebas Neue", sans-serif;
+
+  &__heading {
+    letter-spacing: 2px;
+    font-size: 44px;
+    transform: translateY(-170px);
+    color: $primary-bg-color;
+    text-shadow: -1px -1px 35px $secondary-text-color;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &--population {
+      &::before {
+        background: url(../../images/population.png);
+      }
+    }
+
+    &--gdp {
+      &::before {
+        background: url(../../images/gdp.png);
+      }
+    }
+
+    &--industry {
+      &::before {
+        background: url(../../images/industry.png);
+      }
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 106px;
+      height: 106px;
+      margin-right: 14px;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+  }
+
+  &__text {
+    font-size: 24px;
+  }
+}

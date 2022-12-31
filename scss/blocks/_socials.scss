@@ -1,0 +1,14 @@
+.socials {
+  padding: 35px 0;
+  text-align: center;
+
+  &__heading {
+    font-size: 44px;
+    font-family: "Bebas Neue";
+    margin-bottom: 24px;
+  }
+
+  .icon-socials {
+    color: $primary-text-color;
+  }
+}

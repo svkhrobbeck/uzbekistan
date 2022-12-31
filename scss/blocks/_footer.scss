@@ -1,0 +1,10 @@
+.site-footer {
+  padding: 55px 0;
+  background-color: $primary-bg-color;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

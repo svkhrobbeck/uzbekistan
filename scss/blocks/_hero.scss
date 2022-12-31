@@ -1,0 +1,37 @@
+.hero {
+  background-image: url(../../images/night-registan-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 250px 0;
+  text-align: center;
+
+  &__heading {
+    font-family: "Rubik";
+    font-size: 76px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    // font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    margin-bottom: 24px;
+    text-shadow: -1px -1px 35px $primary-text-color,
+      -1px -1px 35px $primary-text-color;
+    span {
+      color: $special-text-color;
+    }
+  }
+
+  &__link {
+    color: $secondary-text-color;
+    background-color: transparent;
+    box-shadow: -1px -1px 35px $primary-text-color;
+    transition: color 0.4s ease, background-color 0.4s ease;
+    border: 1px solid $secondary-text-color;
+
+    &:hover {
+      color: $special-text-color;
+      background-color: #fff;
+    }
+  }
+}

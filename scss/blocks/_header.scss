@@ -1,0 +1,15 @@
+.site-header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  background-color: $secondary-bg-color;
+  padding: 15px 0;
+  margin-bottom: 83px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

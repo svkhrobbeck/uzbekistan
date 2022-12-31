@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>O'zbekistan | Bosh Sahifa</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -16,29 +23,29 @@
     <header class="site-header">
       <div class="site-header__container container">
         <div class="site-header__logo logo">
-          <a href="#" class="logo__link">
+          <a class="logo__link" href="./index.html">
             <img
               class="logo__img"
               src="./images/logo-black.svg"
               alt="Uzbekistan site logo"
-              width="240"
-              height="70"
+              width="180"
+              height="53"
             />
           </a>
         </div>
 
         <nav class="sitenav">
           <ul class="sitenav__list">
-            <li class="sitenav_item">
+            <li class="sitenav__item">
               <a href="#" class="sitenav__link">BOSH SAHIFA</a>
             </li>
-            <li class="sitenav_item">
+            <li class="sitenav__item">
               <a href="#" class="sitenav__link">YANGILIKLAR</a>
             </li>
-            <li class="sitenav_item">
+            <li class="sitenav__item">
               <a href="#" class="sitenav__link">ALOQA</a>
             </li>
-            <li class="sitenav_item">
+            <li class="sitenav__item">
               <a href="#" class="sitenav__link">MA'LUMOTLAR</a>
             </li>
           </ul>
@@ -51,15 +58,316 @@
     <main class="main-content">
       <!-- HERO -->
       <section class="hero">
-        <div class="hero__wrapper container"></div>
+        <div class="hero__wrapper container">
+          <h2 class="hero__heading">Welcome to <span>Uzbekistan</span></h2>
+          <a class="hero__link button" href="#">Obuna bo'lish</a>
+        </div>
       </section>
       <!-- /HERO -->
+
+      <!-- NEWS -->
+      <section class="news">
+        <div class="news__wrapper container">
+          <h2 class="news__heading">Yangiliklar</h2>
+          <ul class="news__list">
+            <li class="news__item">
+              <div class="news__card cad-news">
+                <div class="card-news__image">
+                  <img
+                    class="card-news__img"
+                    src="./images/sayyohlar-qulaylik.png"
+                    alt=""
+                    width="400"
+                    height="200"
+                    srcset="
+                      ./images/sayyohlar-qulaylik.png 1x,
+                      ./images/sayyohlar-qulaylik.jpg 2x
+                    "
+                  />
+                </div>
+                <div class="card-news__content">
+                  <h3 class="card-news__title">Sayyohlar qulayliklar</h3>
+                  <p class="card-news__text">
+                    Prezidentimizning joriy yilning 3-fevralidagi «O‘zbekiston
+                    Respublikasi turizm salohiyatini rivojlantirish uchun qulay
+                    shart-sharoitlar yaratish bo‘yicha qo‘shimcha tashkiliy
+                    chora-tadbirlar to‘g‘risida”gi farmoniga...
+                  </p>
+                  <a class="card-news__link" href="#"> Ko'proq </a>
+                </div>
+              </div>
+            </li>
+            <li class="news__item">
+              <div class="news__card cad-news">
+                <div class="card-news__image">
+                  <img
+                    class="card-news__img"
+                    src="./images/tungi-shaxar.png"
+                    alt=""
+                    width="400"
+                    height="200"
+                    srcset="
+                      ./images/tungi-shaxar.png 1x,
+                      ./images/tungi-shaxar.jpg 2x
+                    "
+                  />
+                </div>
+                <div class="card-news__content">
+                  <h3 class="card-news__title">Tungi shahar manzaralari</h3>
+                  <p class="card-news__text">
+                    Toshkent – O‘zbekistonning poytaxti va shu bilan birga
+                    Markaziy Osiyodagi eng yirik shahardir.Ko'p yillar davomida
+                    Toshkent butun dunyodan sayyohlar va ishbilarmonlarni jalb
+                    qiladigan markazi...
+                  </p>
+                  <a class="card-news__link" href="#"> Ko'proq </a>
+                </div>
+              </div>
+            </li>
+            <li class="news__item">
+              <div class="news__card cad-news">
+                <div class="card-news__image">
+                  <img
+                    class="card-news__img"
+                    src="./images/yangi-abyektlar.png"
+                    alt=""
+                    width="400"
+                    height="200"
+                    srcset="
+                      ./images/yangi-abyektlar.png 1x,
+                      ./images/yangi-abyektlar.jpg 2x
+                    "
+                  />
+                </div>
+                <div class="card-news__content">
+                  <h3 class="card-news__title">Yangi binolar</h3>
+                  <p class="card-news__text">
+                    Toshkentning Sergeli tumanida 6 ta metro bekati va 500 yangi
+                    turar joy binolari quriladi. Toshkent shahar hokimligida
+                    bo'lib o'tgan matbuot anjumanida Sergeli tumani hokimi
+                    Furqat Maqsudxo'jaev shu haqda ma'lum qildi...
+                  </p>
+                  <a class="card-news__link" href="#"> Ko'proq </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /NEWS -->
+
+      <!-- UZBEKISTAN ADS VIDEO -->
+      <section class="ads-video">
+        <div class="ads-video__wrapper container">
+          <iframe
+            class="ads-video__video"
+            width="640"
+            height="350"
+            src="https://www.youtube.com/embed/vQVwkyn3-F8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerome autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <!-- /UZBEKISTAN ADS VIDEO -->
+
+      <!-- REGIONS -->
+      <section class="regions">
+        <div class="regions__wrapper container">
+          <h2 class="regions__heading">Viloyatlar ro'yxati</h2>
+          <div class="regions__lists">
+            <ul class="regions__list">
+              <li class="regions__item">
+                <a class="regions__link" href="#">Andijan</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Bukhara</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Gulistan</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Jizzakh</a>
+              </li>
+            </ul>
+            <ul class="regions__list">
+              <li class="regions__item">
+                <a class="regions__link" href="#">Karshi</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Navoi</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Namangan </a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Nukus</a>
+              </li>
+            </ul>
+            <ul class="regions__list">
+              <li class="regions__item">
+                <a class="regions__link" href="#">Samarkand</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Tashkent</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Termez</a>
+              </li>
+              <li class="regions__item">
+                <a class="regions__link" href="#">Fergana</a>
+              </li>
+            </ul>
+          </div>
+          <div class="regions__image">
+            <img
+              class="regions__img"
+              src="./images/uzbekistan-map.png"
+              alt="uzbekistan map"
+              width="590"
+              height="391"
+              srcset="
+                ./images/uzbekistan-map.png    1x,
+                ./images/uzbekistan-map@2x.png 2x
+              "
+            />
+          </div>
+        </div>
+      </section>
+      <!-- /REGIONS -->
+
+      <!-- STATISTICS -->
+      <section class="statistics">
+        <div class="statistics__wrapper container">
+          <h2 class="statistics__heading">Statistika</h2>
+          <ul class="statistics__list">
+            <li class="statistics__item statistics__item--population">
+              <div class="statistics__content">
+                <h3 class="statistics__title">Doimiy aholi soni</h3>
+                <p class="statistics__text">36,017,770</p>
+              </div>
+            </li>
+            <!-- gross domestic product -->
+            <li class="statistics__item statistics__item--gdp">
+              <div class="statistics__content">
+                <h3 class="statistics__title">yalpi ichki mahsulot</h3>
+                <p class="statistics__text">105,8%</p>
+              </div>
+            </li>
+            <li class="statistics__item statistics__item--industry">
+              <div class="statistics__content">
+                <h3 class="statistics__title">Sanoat</h3>
+                <p class="statistics__text">105,3%</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /STATISTICS -->
+
+      <!-- SOCIALS -->
+      <section class="socials">
+        <div class="socials__wrapper container">
+          <h2 class="socials__heading">Bizga obuna bo'ling</h2>
+          <div class="socials-icons">
+            <a class="socials-icons__icon icon-socials" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="54"
+                height="54"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"
+                ></path>
+              </svg>
+            </a>
+            <a class="socials-icons__icon icon-socials" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="54"
+                height="54"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"
+                ></path>
+                <circle cx="11.994" cy="11.979" r="3.003"></circle></svg
+            ></a>
+            <a class="socials-icons__icon icon-socials" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="54"
+                height="54"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"
+                ></path></svg
+            ></a>
+            <a class="socials-icons__icon icon-socials" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="54"
+                height="54"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- /SOCIALS -->
     </main>
     <!-- /MAIN CONTENT -->
 
     <!-- FOOTER -->
     <footer class="site-footer">
-      <div class="site-footer__container container"></div>
+      <div class="site-footer__container container">
+        <div class="site-footer__logo logo">
+          <a href="./index.html" class="logo__link">
+            <img
+              src="./images/logo-white.svg"
+              alt="Uzbekistan site white logo"
+              class="logo__img"
+              width="180"
+              height="53"
+            />
+          </a>
+        </div>
+
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link sitenav__link--footer"
+                >BOSH SAHIFA</a
+              >
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link sitenav__link--footer"
+                >YANGILIKLAR</a
+              >
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link sitenav__link--footer">ALOQA</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link sitenav__link--footer"
+                >MA'LUMOTLAR</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
     <!-- /FOOTER -->
   </body>

@@ -15,8 +15,14 @@ html {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 1px dashed $primary-text-color;
+  outline-offset: 3px;
+}
+
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul {
@@ -28,12 +34,15 @@ img {
 }
 
 body {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
   color: $primary-text-color;
+  background-color: $secondary-bg-color;
   display: flex;
   flex-direction: column;
+  letter-spacing: 0.5px;
 }
 
 /* CONTAINER */
@@ -49,6 +58,51 @@ body {
   flex-grow: 1;
 }
 
+// SITENAV STYLES
+.logo {
+  width: 180px;
+  height: 53px;
+  transition: opacity 0.4s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.sitenav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  &__link {
+    font-family: "Bebas Neue";
+    color: $primary-text-color;
+    font-size: 24px;
+    transition: opacity 0.4s ease;
+
+    &--footer {
+      color: $secondary-text-color;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
 /* VISUALLY HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -61,6 +115,18 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* BUTTON */
+.button {
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Bebas Neue";
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* RETINA DISPLAY */
