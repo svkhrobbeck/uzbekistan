@@ -311,6 +311,10 @@ body {
   font-size: 28px;
   margin-bottom: 40px;
 }
+.regions__list:not(:first-child) {
+  border-left: 2px solid #999;
+  padding-left: 25%;
+}
 .regions__item:not(:last-child) {
   margin-bottom: 5px;
 }
