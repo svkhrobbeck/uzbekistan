@@ -163,12 +163,12 @@ body {
 /* RETINA DISPLAY */
 .site-header {
   width: 100%;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 10;
   top: 0;
   background-color: #fff;
   padding: 15px 0;
-  margin-bottom: 83px;
 }
 .site-header__container {
   display: flex;
