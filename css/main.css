@@ -208,6 +208,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .site-header .sitenav {
+    display: none;
+  }
+}
 
 .hero {
   background: url(../../images/registan.jpeg) no-repeat center;
@@ -464,6 +469,11 @@ body {
   padding: 230px 0;
   font-family: "Bebas Neue", sans-serif;
 }
+@media only screen and (max-width: 992px) {
+  .statistics {
+    padding: 150px 0;
+  }
+}
 .statistics__heading {
   letter-spacing: 2px;
   font-size: 44px;
@@ -471,13 +481,33 @@ body {
   color: #222;
   text-shadow: -1px -1px 35px #fff;
 }
+@media only screen and (max-width: 992px) {
+  .statistics__heading {
+    font-size: 40px;
+    transform: translateY(-130px);
+  }
+}
 .statistics__list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .statistics__list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 .statistics__item {
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .statistics__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 .statistics__item--population::before {
   background: url(../../images/population.png);
@@ -501,8 +531,18 @@ body {
 .statistics__title {
   font-size: 28px;
 }
+@media only screen and (max-width: 992px) {
+  .statistics__title {
+    text-shadow: -1px -1px 35px #fff, -1px -1px 35px #fff;
+  }
+}
 .statistics__text {
   font-size: 24px;
+}
+@media only screen and (max-width: 992px) {
+  .statistics__text {
+    text-shadow: -1px -1px 35px #fff, -1px -1px 35px #fff;
+  }
 }
 
 .socials {
