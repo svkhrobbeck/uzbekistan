@@ -5,6 +5,7 @@
   background-position: center;
   background-attachment: fixed;
   padding: 100px 0 170px;
+  transition: height 0.4s ease, padding .4s ease;
 
   @media only screen and (max-width: $mobile) {
     height: 100vh;

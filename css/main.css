@@ -83,10 +83,16 @@ body {
   display: flex;
   flex-direction: column;
   letter-spacing: 0.5px;
+  transition: font-size 0.4s ease;
 }
 @media only screen and (max-width: 992px) {
   body {
     font-size: 17px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body {
+    font-size: 16px;
   }
 }
 
@@ -220,6 +226,11 @@ body {
   align-items: center;
 }
 @media only screen and (max-width: 768px) {
+  .site-header__container {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
   .site-header .sitenav {
     display: none;
   }
@@ -231,6 +242,7 @@ body {
   background-attachment: fixed;
   padding: 200px 0 300px;
   text-align: center;
+  transition: height 0.4s ease, padding 0.4s ease;
 }
 @media only screen and (max-width: 576px) {
   .hero {
@@ -247,6 +259,7 @@ body {
   color: #fff;
   margin-bottom: 24px;
   text-shadow: -1px -1px 35px #000, -1px -1px 35px #000;
+  transition: font-size 0.4s ease;
 }
 @media only screen and (max-width: 992px) {
   .hero__heading {
@@ -292,10 +305,21 @@ body {
   font-family: "Bebas Neue";
   font-size: 44px;
   margin-bottom: 12px;
+  transition: font-size 0.4s ease;
 }
 @media only screen and (max-width: 992px) {
   .news__heading {
     font-size: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .news__heading {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .news__heading {
+    font-size: 28px;
   }
 }
 .news__list {
@@ -342,6 +366,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  transition: max-width 0.4s ease;
 }
 @media only screen and (max-width: 992px) {
   .news__card {
@@ -362,6 +387,7 @@ body {
   max-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: max-width 0.4s ease;
 }
 @media only screen and (max-width: 992px) {
   .news .card-news__img {
@@ -433,6 +459,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   padding: 100px 0 170px;
+  transition: height 0.4s ease, padding 0.4s ease;
 }
 @media only screen and (max-width: 576px) {
   .ads-video {
@@ -460,6 +487,23 @@ body {
   font-size: 44px;
   font-family: "Bebas Neue", sans-serif;
   margin-bottom: 32px;
+  transition: font-size 0.4s ease;
+}
+@media only screen and (max-width: 992px) {
+  .regions__heading {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .regions__heading {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .regions__heading {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
 }
 .regions__lists {
   display: flex;
@@ -502,6 +546,7 @@ body {
   background-attachment: fixed;
   padding: 230px 0;
   font-family: "Bebas Neue", sans-serif;
+  transition: height 0.4s ease, padding 0.4s ease;
 }
 @media only screen and (max-width: 992px) {
   .statistics {
@@ -521,6 +566,7 @@ body {
   transform: translateY(-170px);
   color: #222;
   text-shadow: -1px -1px 35px #fff;
+  transition: font-size 0.4s ease;
 }
 @media only screen and (max-width: 992px) {
   .statistics__heading {
@@ -528,9 +574,14 @@ body {
     transform: translateY(-130px);
   }
 }
+@media only screen and (max-width: 768px) {
+  .statistics__heading {
+    font-size: 32px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .statistics__heading {
-    font-size: 40px;
+    font-size: 28px;
     transform: translateY(0);
     margin-bottom: 30px;
   }
@@ -545,6 +596,12 @@ body {
     flex-direction: column;
     align-items: flex-start;
     width: 60%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .statistics__list {
+    width: auto;
     margin: 0 auto;
   }
 }
@@ -601,6 +658,22 @@ body {
   font-size: 44px;
   font-family: "Bebas Neue";
   margin-bottom: 24px;
+  transition: font-size 0.4s ease;
+}
+@media only screen and (max-width: 992px) {
+  .socials__heading {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .socials__heading {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .socials__heading {
+    font-size: 28px;
+  }
 }
 .socials-icons {
   display: flex;
@@ -622,6 +695,23 @@ body {
 }
 .socials .icon-socials:focus {
   color: #ff7500;
+}
+.socials .icon-socials svg {
+  width: 54px;
+  height: 54px;
+  transition: width 0.4s ease;
+}
+@media only screen and (max-width: 768px) {
+  .socials .icon-socials svg {
+    width: 44px;
+    height: 44px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .socials .icon-socials svg {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .site-footer {

@@ -5,6 +5,20 @@
     font-size: 44px;
     font-family: "Bebas Neue", sans-serif;
     margin-bottom: 32px;
+    transition: font-size 0.4s ease;
+
+    @media only screen and (max-width: $tablet-l) {
+      font-size: 40px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 32px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
   }
 
   &__lists {

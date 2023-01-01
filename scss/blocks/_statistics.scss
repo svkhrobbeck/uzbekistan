@@ -6,6 +6,7 @@
   background-attachment: fixed;
   padding: 230px 0;
   font-family: "Bebas Neue", sans-serif;
+  transition: height 0.4s ease, padding 0.4s ease;
 
   @media only screen and (max-width: $tablet-l) {
     padding: 150px 0;
@@ -23,14 +24,19 @@
     transform: translateY(-170px);
     color: $primary-bg-color;
     text-shadow: -1px -1px 35px $secondary-text-color;
+    transition: font-size 0.4s ease;
 
     @media only screen and (max-width: $tablet-l) {
       font-size: 40px;
       transform: translateY(-130px);
     }
 
+    @media only screen and (max-width: $tablet) {
+      font-size: 32px;
+    }
+
     @media only screen and (max-width: $mobile) {
-      font-size: 40px;
+      font-size: 28px;
       transform: translateY(0);
       margin-bottom: 30px;
     }
@@ -45,6 +51,11 @@
       flex-direction: column;
       align-items: flex-start;
       width: 60%;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      width: auto;
       margin: 0 auto;
     }
   }
