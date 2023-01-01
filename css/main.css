@@ -476,8 +476,6 @@ body {
 .ads-video__video {
   max-width: 640px;
   max-height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .regions {
