@@ -59,22 +59,26 @@ body {
 
 /* SCROLL BAR */
 ::-webkit-scrollbar {
-  width: 12px;
+  @media only screen and (min-width: $tablet) {
+    width: 12px;
+  }
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 8px;
+  @media only screen and (min-width: $tablet) {
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px grey;
+  }
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(110, 110, 110);
-  border-radius: 10px;
-
-  &:hover {
+  @media only screen and (min-width: $tablet) {
     background: rgb(110, 110, 110);
+    border-radius: 10px;
+
+    &:hover {
+      background: rgb(110, 110, 110);
+    }
   }
 }
 
