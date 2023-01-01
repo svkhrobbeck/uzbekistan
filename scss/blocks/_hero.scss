@@ -1,6 +1,5 @@
 .hero {
-  background-image: url(../../images/registan.jpeg);
-  background-repeat: no-repeat;
+  background: url(../../images/registan.jpeg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   padding: 200px 0 300px;
@@ -11,12 +10,16 @@
     font-size: 76px;
     line-height: 1.2;
     letter-spacing: normal;
-    // font-family: "Bebas Neue", sans-serif;
     text-transform: uppercase;
     color: $secondary-text-color;
     margin-bottom: 24px;
     text-shadow: -1px -1px 35px $primary-text-color,
       -1px -1px 35px $primary-text-color;
+
+    @media only screen and (max-width: $tablet-l) {
+      font-size: 54px;
+    }
+
     span {
       color: $special-text-color;
     }
@@ -25,9 +28,15 @@
   &__link {
     color: $secondary-text-color;
     background-color: transparent;
+    font-size: 24px;
+    border-radius: 50px;
     box-shadow: -1px -1px 35px $primary-text-color;
     transition: color 0.4s ease, background-color 0.4s ease;
     border: 1px solid $secondary-text-color;
+
+    @media only screen and (max-width: $tablet-l) {
+      font-size: 20px;
+    }
 
     &:hover {
       color: $special-text-color;

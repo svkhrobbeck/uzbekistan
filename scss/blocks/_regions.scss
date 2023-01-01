@@ -15,11 +15,6 @@
     margin-bottom: 40px;
   }
 
-  &__list:not(:first-child) {
-    border-left: 2px solid $special-bg-color;
-    padding-left: 25%;
-  }
-
   &__item {
     &:not(:last-child) {
       margin-bottom: 5px;

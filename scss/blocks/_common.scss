@@ -43,6 +43,10 @@ body {
   display: flex;
   flex-direction: column;
   letter-spacing: 0.5px;
+
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 17px;
+  }
 }
 
 /* CONTAINER */
@@ -141,13 +145,19 @@ body {
 /* BUTTON */
 .button {
   padding: 12px 24px;
-  border-radius: 50px;
   font-weight: 400;
-  font-size: 24px;
   font-family: "Bebas Neue";
   text-align: center;
   display: inline-block;
   cursor: pointer;
+
+  @media only screen and (max-width: $tablet-l) {
+    padding: 8px 16px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 7px 14px;
+  }
 }
 
 /* RETINA DISPLAY */
