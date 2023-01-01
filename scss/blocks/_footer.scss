@@ -28,4 +28,21 @@
       color: $orange-text-color;
     }
   }
+
+  .sitenav {
+    &__list {
+      @media only screen and (max-width: $mobile) {
+        flex-direction: column;
+      }
+    }
+
+    &__item {
+      @media only screen and (max-width: $mobile) {
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }

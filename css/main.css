@@ -104,6 +104,11 @@ body {
     width: 12px;
   }
 }
+@media only screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   ::-webkit-scrollbar-track {
@@ -206,6 +211,13 @@ body {
   top: 0;
   background-color: #fff;
   padding: 15px 0;
+}
+@media only screen and (max-width: 768px) {
+  .site-header {
+    position: static;
+    z-index: auto;
+    padding: 10px 0;
+  }
 }
 .site-header__container {
   display: flex;
@@ -645,4 +657,15 @@ body {
 .site-footer__copyright a {
   margin-left: 5px;
   color: #ff7500;
+}
+@media only screen and (max-width: 576px) {
+  .site-footer .sitenav__list {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .site-footer .sitenav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
