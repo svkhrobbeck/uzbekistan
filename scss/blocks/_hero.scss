@@ -5,6 +5,11 @@
   padding: 200px 0 300px;
   text-align: center;
 
+  @media only screen and (max-width: $mobile) {
+    height: 100vh;
+    background-position: center top;
+  }
+
   &__heading {
     font-family: "Rubik";
     font-size: 76px;
@@ -18,6 +23,14 @@
 
     @media only screen and (max-width: $tablet-l) {
       font-size: 54px;
+    }
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 44px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 34px;
     }
 
     span {

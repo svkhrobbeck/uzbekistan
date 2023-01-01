@@ -6,6 +6,12 @@
   background-attachment: fixed;
   padding: 100px 0 170px;
 
+  @media only screen and (max-width: $mobile) {
+    height: 100vh;
+    background-position: center top;
+    padding: 300px 0;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;

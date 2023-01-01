@@ -221,6 +221,12 @@ body {
   padding: 200px 0 300px;
   text-align: center;
 }
+@media only screen and (max-width: 576px) {
+  .hero {
+    height: 100vh;
+    background-position: center top;
+  }
+}
 .hero__heading {
   font-family: "Rubik";
   font-size: 76px;
@@ -234,6 +240,16 @@ body {
 @media only screen and (max-width: 992px) {
   .hero__heading {
     font-size: 54px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero__heading {
+    font-size: 44px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero__heading {
+    font-size: 34px;
   }
 }
 .hero__heading span {
@@ -407,6 +423,13 @@ body {
   background-attachment: fixed;
   padding: 100px 0 170px;
 }
+@media only screen and (max-width: 576px) {
+  .ads-video {
+    height: 100vh;
+    background-position: center top;
+    padding: 300px 0;
+  }
+}
 .ads-video__wrapper {
   display: flex;
   align-items: center;
@@ -474,6 +497,13 @@ body {
     padding: 150px 0;
   }
 }
+@media only screen and (max-width: 576px) {
+  .statistics {
+    height: 100vh;
+    background-position: center top;
+    padding: 100px 0;
+  }
+}
 .statistics__heading {
   letter-spacing: 2px;
   font-size: 44px;
@@ -485,6 +515,13 @@ body {
   .statistics__heading {
     font-size: 40px;
     transform: translateY(-130px);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .statistics__heading {
+    font-size: 40px;
+    transform: translateY(0);
+    margin-bottom: 30px;
   }
 }
 .statistics__list {

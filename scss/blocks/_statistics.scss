@@ -11,6 +11,12 @@
     padding: 150px 0;
   }
 
+  @media only screen and (max-width: $mobile) {
+    height: 100vh;
+    background-position: center top;
+    padding: 100px 0;
+  }
+
   &__heading {
     letter-spacing: 2px;
     font-size: 44px;
@@ -21,6 +27,12 @@
     @media only screen and (max-width: $tablet-l) {
       font-size: 40px;
       transform: translateY(-130px);
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 40px;
+      transform: translateY(0);
+      margin-bottom: 30px;
     }
   }
 
