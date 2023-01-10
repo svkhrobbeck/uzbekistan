@@ -1,5 +1,5 @@
 .statistics {
-  background-image: url(../../images/tashkent.jpeg);
+  background-image: u../images/tashkent.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -72,19 +72,19 @@
 
     &--population {
       &::before {
-        background: url(../../images/population.png);
+        background: url(../images/population.png);
       }
     }
 
     &--gdp {
       &::before {
-        background: url(../../images/gdp.png);
+        background: url(../images/gdp.png);
       }
     }
 
     &--industry {
       &::before {
-        background: url(../../images/industry.png);
+        background: url(../images/industry.png);
       }
     }
     &::before {
