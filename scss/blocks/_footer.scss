@@ -10,6 +10,12 @@
   *:focus {
     outline-color: #fff;
   }
+
+  @media only screen and (max-width: $tablet) {
+    .sitenav {
+      display: none;
+    }
+  }
 }
 
 .site-footer__container {

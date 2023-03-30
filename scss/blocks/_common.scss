@@ -44,6 +44,11 @@ body {
   flex-direction: column;
   letter-spacing: 0.5px;
   transition: font-size 0.4s ease;
+  margin-top: 82px;
+
+  &.hidden {
+    overflow: hidden;
+  }
 
   @media only screen and (max-width: $tablet-l) {
     font-size: 17px;
@@ -53,8 +58,8 @@ body {
     font-size: 16px;
   }
 
-  @media only screen and (min-width: 769px) {
-    margin-top: 82px;
+  @media only screen and (max-width: $tablet) {
+    margin-top: 54px;
   }
 }
 
@@ -115,12 +120,6 @@ body {
 }
 
 /* SITENAV */
-.sitenav {
-  @media only screen and (max-width: $tablet) {
-    display: none;
-  }
-}
-
 .sitenav__list {
   display: flex;
   align-items: center;
