@@ -1,30 +1,25 @@
 .site-header {
-  width: 100%;
-  position: sticky;
+  position: fixed;
   z-index: 10;
   top: 0;
+  left: 0;
+  width: 100%;
   background-color: $secondary-bg-color;
   padding: 15px 0;
-
+  
   @media only screen and (max-width: $tablet) {
     position: static;
     z-index: auto;
     padding: 10px 0;
   }
+}
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media only screen and (max-width: $tablet) {
-      justify-content: center;
-    }
-  }
-
-  .sitenav {
-    @media only screen and (max-width: $tablet) {
-      display: none;
-    }
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  @media only screen and (max-width: $tablet) {
+    justify-content: center;
   }
 }

@@ -1,119 +1,114 @@
+/* STATISTICS */
 .statistics {
-  background-image: u../images/tashkent.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-attachment: fixed;
-  padding: 230px 0;
+  background: url("../images/tashkent.jpeg") no-repeat center top / cover fixed;
+  height: calc(100vh - 82px);
+  padding-top: 120px;
   font-family: "Bebas Neue", sans-serif;
   transition: height 0.4s ease, padding 0.4s ease;
 
   @media only screen and (max-width: $tablet-l) {
-    padding: 150px 0;
+    padding-top: 100px;
   }
 
   @media only screen and (max-width: $mobile) {
-    height: 90vh;
+    height: 100vh;
     background-position: center top;
-    padding: 100px 0;
+    padding-top: 80px;
+  }
+}
+
+.statistics__heading {
+  letter-spacing: 2px;
+  font-size: 44px;
+  color: $primary-text-color;
+  margin-bottom: 70px;
+  transition: font-size 0.4s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 40px;
   }
 
-  &__heading {
-    letter-spacing: 2px;
-    font-size: 44px;
-    transform: translateY(-170px);
-    color: $primary-bg-color;
-    text-shadow: -1px -1px 35px $secondary-text-color;
-    transition: font-size 0.4s ease;
+  @media only screen and (max-width: $tablet) {
+    font-size: 32px;
+  }
 
-    @media only screen and (max-width: $tablet-l) {
-      font-size: 40px;
-      transform: translateY(-130px);
+  @media only screen and (max-width: $mobile) {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.statistics__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+
+  @media only screen and (max-width: $tablet-l) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+.statistics__item {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background: no-repeat center / contain;
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+  }
+
+  &--population {
+    &::before {
+      background-image: url(../images/population.png);
     }
+  }
 
-    @media only screen and (max-width: $tablet) {
-      font-size: 32px;
+  &--gdp {
+    &::before {
+      background-image: url(../images/gdp.png);
     }
+  }
 
-    @media only screen and (max-width: $mobile) {
-      font-size: 28px;
-      transform: translateY(0);
+  &--industry {
+    &::before {
+      background-image: url(../images/industry.png);
+    }
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
+}
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.statistics__title {
+  font-size: 28px;
 
-    @media only screen and (max-width: $tablet-l) {
-      flex-direction: column;
-      align-items: flex-start;
-      width: 60%;
-      margin: 0 auto;
-    }
-
-    @media only screen and (max-width: $mobile) {
-      width: auto;
-      margin: 0 auto;
-    }
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
-
-    @media only screen and (max-width: $tablet-l) {
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
-    }
-
-    &--population {
-      &::before {
-        background: url(../images/population.png);
-      }
-    }
-
-    &--gdp {
-      &::before {
-        background: url(../images/gdp.png);
-      }
-    }
-
-    &--industry {
-      &::before {
-        background: url(../images/industry.png);
-      }
-    }
-    &::before {
-      content: "";
-      display: inline-block;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      width: 90px;
-      height: 90px;
-      margin-right: 14px;
-    }
-  }
-
-  &__title {
-    font-size: 28px;
-
-    @media only screen and (max-width: $tablet-l) {
-      text-shadow: -1px -1px 35px $secondary-text-color,
-        -1px -1px 35px $secondary-text-color;
-    }
-  }
-
-  &__text {
+  @media only screen and (max-width: $tablet-l) {
     font-size: 24px;
+  }
+}
 
-    @media only screen and (max-width: $tablet-l) {
-      text-shadow: -1px -1px 35px $secondary-text-color,
-        -1px -1px 35px $secondary-text-color;
-    }
+.statistics__text {
+  font-size: 24px;
+
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 20px;
   }
 }

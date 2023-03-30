@@ -1,5 +1,11 @@
+/* REGIONS */
 .regions {
   padding: 30px 0;
+  height: calc(100vh - 82px);
+
+  @media only screen and (max-width: $tablet-l) {
+    height: auto;
+  }
 
   &__heading {
     font-size: 44px;
@@ -23,10 +29,14 @@
 
   &__lists {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 24px;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 28px;
     margin-bottom: 40px;
+
+    @media only screen and (max-width: $tablet) {
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -37,6 +47,7 @@
 
   &__link {
     color: $primary-text-color;
+    font-size: 28px;
     transition: opacity 0.4s ease;
 
     &--footer {
@@ -50,11 +61,20 @@
     &:active {
       opacity: 0.6;
     }
+
+    @media only screen and (max-width: $tablet) {
+      font-size: 24px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 20px;
+    }
   }
 
   &__image {
-    max-width: 590px;
-    max-height: 391px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
   }
 

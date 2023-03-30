@@ -2,7 +2,7 @@
   padding: 35px 0;
   text-align: center;
 
-  &__heading {
+  .socials__heading {
     font-size: 44px;
     font-family: "Bebas Neue";
     margin-bottom: 24px;
@@ -27,8 +27,9 @@
   }
 
   .icon-socials {
-    color: $primary-text-color;
-    transition: opacity 0.4s ease, color 0.4s ease;
+    display: flex;
+    border-radius: 10px;
+    transition: opacity 0.4s ease;
 
     &:not(:last-child) {
       margin-right: 16px;
@@ -36,31 +37,10 @@
 
     &:hover {
       opacity: 0.8;
-      color: $orange-text-color;
     }
 
     &:active {
       opacity: 0.6;
-    }
-
-    &:focus {
-      color: $orange-text-color;
-    }
-
-    svg {
-      width: 54px;
-      height: 54px;
-      transition: width 0.4s ease;
-
-      @media only screen and (max-width: $tablet) {
-        width: 44px;
-        height: 44px;
-      }
-
-      @media only screen and (max-width: $mobile) {
-        width: 34px;
-        height: 34px;
-      }
     }
   }
 }

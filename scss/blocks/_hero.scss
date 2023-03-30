@@ -1,61 +1,67 @@
+/* HERO */
 .hero {
-  background: url(../images/registan.jpeg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 200px 0 300px;
+  background: #02061c url(../images/registan.jpeg) no-repeat center / cover
+    fixed;
+  padding: 90px 0 0;
+  height: calc(100vh - 82px);
   text-align: center;
+  backdrop-filter: blur(15px);
   transition: height 0.4s ease, padding 0.4s ease;
 
-  @media only screen and (max-width: $mobile) {
-    height: 90vh;
+  @media only screen and (max-width: $tablet) {
+    height: calc(100vh - 54px);
     background-position: center top;
   }
+}
 
-  &__heading {
-    font-family: "Rubik";
-    font-size: 76px;
-    line-height: 1.2;
-    letter-spacing: normal;
-    text-transform: uppercase;
-    color: $secondary-text-color;
-    margin-bottom: 24px;
-    text-shadow: -1px -1px 35px $primary-text-color,
-      -1px -1px 35px $primary-text-color;
-    transition: font-size 0.4s ease;
+.hero__heading {
+  font-family: "Rubik";
+  font-size: 76px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  margin-bottom: 24px;
+  transition: font-size 0.4s ease;
 
-    @media only screen and (max-width: $tablet-l) {
-      font-size: 54px;
-    }
-
-    @media only screen and (max-width: $tablet) {
-      font-size: 44px;
-    }
-
-    @media only screen and (max-width: $mobile) {
-      font-size: 34px;
-    }
-
-    span {
-      color: $special-text-color;
-    }
+  @media only screen and (max-width: $desktop) {
+    font-size: 54px;
   }
 
-  &__link {
-    color: $secondary-text-color;
-    background-color: transparent;
-    font-size: 24px;
-    border-radius: 50px;
-    box-shadow: -1px -1px 35px $primary-text-color;
-    transition: color 0.4s ease, background-color 0.4s ease;
-    border: 1px solid $secondary-text-color;
+  @media only screen and (max-width: $tablet) {
+    font-size: 44px;
+  }
 
-    @media only screen and (max-width: $tablet-l) {
-      font-size: 20px;
+  @media only screen and (max-width: $mobile) {
+    font-size: 34px;
+  }
+
+  span {
+    background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.hero__link {
+  color: $secondary-text-color;
+  background-color: transparent;
+  font-size: 24px;
+  border-radius: 50px;
+  transition: background 0.4s ease, color 0.5s ease;
+  border: 1px solid $secondary-text-color;
+
+  &:hover {
+    span {
+      background: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    &:hover {
-      color: $special-text-color;
-      background-color: #fff;
-    }
+    background-color: #fff;
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 20px;
   }
 }
