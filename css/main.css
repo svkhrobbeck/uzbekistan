@@ -386,8 +386,8 @@ body.hidden {
 .news__heading {
   font-family: "Bebas Neue";
   font-size: 44px;
+  font-weight: 400;
   margin-bottom: 12px;
-  letter-spacing: 1px;
   transition: font-size 0.4s ease;
 }
 @media only screen and (max-width: 992px) {
@@ -461,6 +461,7 @@ body.hidden {
 
 .item-news__title {
   font-size: 28px;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 12px;
   font-family: "Bebas Neue";
@@ -578,6 +579,7 @@ body.hidden {
 }
 .regions__heading {
   font-size: 44px;
+  font-weight: 400;
   font-family: "Bebas Neue", sans-serif;
   margin-bottom: 32px;
   transition: font-size 0.4s ease;
@@ -670,8 +672,8 @@ body.hidden {
 }
 
 .statistics__heading {
-  letter-spacing: 2px;
   font-size: 44px;
+  font-weight: 400;
   color: #000;
   margin-bottom: 70px;
   transition: font-size 0.4s ease;
@@ -767,6 +769,7 @@ body.hidden {
 }
 .socials .socials__heading {
   font-size: 44px;
+  font-weight: 400;
   font-family: "Bebas Neue";
   margin-bottom: 24px;
   transition: font-size 0.4s ease;
