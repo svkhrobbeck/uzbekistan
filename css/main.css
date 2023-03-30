@@ -96,7 +96,7 @@ body {
     font-size: 16px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   body {
     margin-top: 82px;
   }
@@ -479,10 +479,34 @@ body {
     background-position: center top;
   }
 }
+
 .ads-video__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ads-video__video {
+  width: 800px;
+  height: 450px;
+}
+@media only screen and (max-width: 992px) {
+  .ads-video__video {
+    width: 600px;
+    height: 338px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ads-video__video {
+    width: 400px;
+    height: 225px;
+  }
+}
+@media only screen and (max-width: 455px) {
+  .ads-video__video {
+    width: 300px;
+    height: 168px;
+  }
 }
 
 /* REGIONS */

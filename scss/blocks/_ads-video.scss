@@ -11,10 +11,30 @@
     height: 100vh;
     background-position: center top;
   }
+}
 
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.ads-video__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ads-video__video {
+  width: 800px;
+  height: 450px;
+
+  @media only screen and (max-width: $tablet-l) {
+    width: 600px;
+    height: 338px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    width: 400px;
+    height: 225px;
+  }
+
+  @media only screen and (max-width: 455px) {
+    width: 300px;
+    height: 168px;
   }
 }
