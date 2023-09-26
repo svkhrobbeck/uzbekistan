@@ -767,7 +767,8 @@ body.hidden {
   padding: 35px 0;
   text-align: center;
 }
-.socials .socials__heading {
+
+.socials__heading {
   font-size: 44px;
   font-weight: 400;
   font-family: "Bebas Neue";
@@ -775,37 +776,46 @@ body.hidden {
   transition: font-size 0.4s ease;
 }
 @media only screen and (max-width: 992px) {
-  .socials .socials__heading {
+  .socials__heading {
     font-size: 40px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .socials .socials__heading {
+  .socials__heading {
     font-size: 32px;
   }
 }
 @media only screen and (max-width: 576px) {
-  .socials .socials__heading {
+  .socials__heading {
     font-size: 28px;
   }
 }
+
 .socials-icons {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
-.socials .icon-socials {
+
+.link-socials {
   display: flex;
   border-radius: 10px;
   transition: opacity 0.4s ease;
 }
-.socials .icon-socials:not(:last-child) {
+.link-socials .link-socials:not(:last-child) {
   margin-right: 16px;
 }
-.socials .icon-socials:hover {
+.link-socials:hover {
   opacity: 0.8;
 }
-.socials .icon-socials:active {
+.link-socials:active {
   opacity: 0.6;
+}
+
+.link-socials__icon {
+  max-width: 28px;
+  width: 100%;
+  height: auto;
 }
 
 /* FOOTER */

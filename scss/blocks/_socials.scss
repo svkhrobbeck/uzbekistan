@@ -1,47 +1,54 @@
 .socials {
   padding: 35px 0;
   text-align: center;
+}
 
-  .socials__heading {
-    font-size: 44px;
-    font-weight: 400;
-    font-family: "Bebas Neue";
-    margin-bottom: 24px;
-    transition: font-size 0.4s ease;
+.socials__heading {
+  font-size: 44px;
+  font-weight: 400;
+  font-family: "Bebas Neue";
+  margin-bottom: 24px;
+  transition: font-size 0.4s ease;
 
-    @media only screen and (max-width: $tablet-l) {
-      font-size: 40px;
-    }
-
-    @media only screen and (max-width: $tablet) {
-      font-size: 32px;
-    }
-
-    @media only screen and (max-width: $mobile) {
-      font-size: 28px;
-    }
+  @media only screen and (max-width: $tablet-l) {
+    font-size: 40px;
   }
 
-  &-icons {
-    display: flex;
-    justify-content: center;
+  @media only screen and (max-width: $tablet) {
+    font-size: 32px;
   }
 
-  .icon-socials {
-    display: flex;
-    border-radius: 10px;
-    transition: opacity 0.4s ease;
-
-    &:not(:last-child) {
-      margin-right: 16px;
-    }
-
-    &:hover {
-      opacity: 0.8;
-    }
-
-    &:active {
-      opacity: 0.6;
-    }
+  @media only screen and (max-width: $mobile) {
+    font-size: 28px;
   }
+}
+
+.socials-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.link-socials {
+  display: flex;
+  border-radius: 10px;
+  transition: opacity 0.4s ease;
+
+  & &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.link-socials__icon {
+  max-width: 28px;
+  width: 100%;
+  height: auto;
 }
